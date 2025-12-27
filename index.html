@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghostware</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1b1b1b, #080808);
+  color: #eaeaea;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2.5rem;
+  background: rgba(15,15,15,0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #222;
+}
+nav .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+nav a {
+  color: #eaeaea;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: bold;
+  position: relative;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #7f5cff;
+  transition: width 0.3s;
+}
+nav a:hover::after { width: 100%; }
+header {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header h1 {
+  font-size: 4rem;
+  margin: 0;
+  text-shadow: 0 0 25px #7f5cff;
+}
+header p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  color: #bdbdbd;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #0b0b0b;
+  border-top: 1px solid #222;
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">GHOSTWARE</div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="community.html">Community</a>
+  </div>
+</nav>
+<header>
+  <h1>Ghostware</h1>
+  <p>Elite game modifications, private clients, and undetected tools engineered for dominance.</p>
+</header>
+<footer>&copy; 2025 Ghostware</footer>
+</body>
+</html>
